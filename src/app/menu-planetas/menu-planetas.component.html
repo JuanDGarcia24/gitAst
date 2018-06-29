@@ -1,0 +1,10 @@
+<div class="Menu-Planetas">
+  <nav>
+    <ul>
+      <li *ngFor="let planet of planetas">
+        <a [class.selected]="planet === selectedPlanet" (click)="selectPlanet(planet)">{{planet.name}}</a> 
+      </li>
+    </ul>
+  </nav>
+</div>
+<app-fuselaje></app-fuselaje>

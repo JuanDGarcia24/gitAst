@@ -1,0 +1,7 @@
+<nav>
+  <ul>
+    <li *ngFor="let route of routes">
+      <a [class.active]="route === selectedRoute" routerLink="/{{route}}">{{ route }}</a> 
+    </li>
+  </ul>
+</nav>
